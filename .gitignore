@@ -103,6 +103,13 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# front end ignores
+
+front/node_modules/
+front/build/
+
 # ignore docker for now
 docker-compose.yml
 Dockerfile
+
+
