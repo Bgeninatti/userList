@@ -8,9 +8,9 @@ class UsersList extends Component {
     return (
       <div className="container mt-5">
         <div className="row">
-          <div className="col-12">
+          <div className="col-8 offset-2 mt-3">
             {this.props.loading ? (
-              <Spinner />
+              <Spinner margin={true} />
             ) : this.props.users.length > 0 ? (
               this.props.users.map((user) => {
                 return (

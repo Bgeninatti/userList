@@ -1,0 +1,9 @@
+.UserFrom {
+  top: 5rem;
+  position: fixed !important;
+  z-index: 1000;
+  left: -300px;
+}
+.show {
+  left: 0 !important;
+}
