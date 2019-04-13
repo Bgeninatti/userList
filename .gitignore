@@ -112,4 +112,5 @@ front/build/
 docker-compose.yml
 Dockerfile
 
-
+# local settings
+django_app/users_list/local_settings.py

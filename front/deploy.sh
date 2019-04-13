@@ -1,3 +1,4 @@
+node_modules/prettier/bin-prettier.js --config prettier.config.js --write src/**/*.js
 npm run build
 
 rm -rf ../django_app/assets/css/

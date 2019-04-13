@@ -14,11 +14,16 @@ class UsersList extends Component {
             ) : this.props.users.length > 0 ? (
               this.props.users.map((user) => {
                 return (
-                  <UserCard key={user.id} id={user.id} email={user.email} />
+                  <UserCard
+                    key={user.id}
+                    user={user}
+                    fetchUsers={this.props.fetchUsers}
+                    toggleForm={this.props.toggleForm}
+                  />
                 );
               })
             ) : (
-              <p>No users found</p>
+              <h4 class="lead text-center mt-4">No users found</h4>
             )}
           </div>
         </div>
@@ -30,6 +35,8 @@ class UsersList extends Component {
 UsersList.propTypes = {
   loading: PropTypes.bool.isRequired,
   users: PropTypes.array.isRequired,
+  fetchUsers: PropTypes.func,
+  toggleForm: PropTypes.func,
 };
 
 export default UsersList;

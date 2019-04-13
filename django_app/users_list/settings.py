@@ -130,3 +130,4 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
+from users_list.local_settings import DATABASES
