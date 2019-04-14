@@ -108,9 +108,6 @@ venv.bak/
 front/node_modules/
 front/build/
 
-# ignore docker for now
-docker-compose.yml
-Dockerfile
 
 # local settings
 django_app/users_list/local_settings.py
