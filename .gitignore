@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# front end ignores
+
+front/node_modules/
+front/build/
+
+
+# local settings
+django_app/users_list/local_settings.py
